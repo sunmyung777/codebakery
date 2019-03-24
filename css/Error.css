@@ -1,0 +1,104 @@
+
+.Page{
+  height:100%;
+  width:100%;
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+body{
+  font-family: "Nanum Gothic", sans-serif !important;
+  background-image:url("../images/main_sub1.png");
+}
+
+
+#facebook_box{
+  z-index: 60;
+  margin:0 auto;
+  margin-top:120px;
+  border-radius: 50px 10px 50px 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#4267B2;
+  opacity:1;
+  width:220px;
+  height:50px;
+}
+
+a{
+  text-decoration: none;
+}
+
+#beta_page{
+  margin:0 auto;
+  border-radius: 50px 10px 50px 10px;
+  width:220px;
+  height:50px;
+  margin-top:30px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  opacity:1;
+  background-color:rgb(241, 150, 83);
+}
+
+#facebook_box > span , #beta_page > span{
+  font-family: "Nunito", sans-serif;
+  font-size:1.1rem;
+  color:white;
+}
+
+#facebook_box:hover{
+  background-color:#6d84b1;
+  transition:0.2s;
+  pointer-events:auto;
+}
+
+#beta_page:hover{
+  background-color:rgb(208, 156, 118);
+  transition:0.2s;
+  pointer-events:auto;
+}
+
+@media screen and (min-width:787px){
+  .Page > h1{
+    font-size: 50pt;
+  }
+  body{
+    background-size:cover;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .Page > h1{
+    font-size: 35pt;
+  }
+  body{
+    background-size:contain;
+  }
+}
+
+@media screen and (max-width:786px){
+  .Page > h1{
+    font-size: 20pt;
+  }
+  body{
+    background-size:contain;
+  }
+}
+
+@media screen and (max-width:426px){
+  .Page > h1{
+    font-size: 15pt;
+  }
+  body{
+    background-size:contain;
+  }
+}
